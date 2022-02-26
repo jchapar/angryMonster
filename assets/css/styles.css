@@ -1,0 +1,249 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@300;400;700&display=swap");
+/* Custom properties */
+:root {
+  --light-color: #fff;
+  --dark-color: #171721;
+  --dark-color-lighter: #7e8299;
+  --main-color: #eb6123;
+  --body-background-color: #202028;
+  --border-bottom-color: rgba(255, 255, 255, 0.05);
+  --transparent-button-color: rgba(255, 255, 255, 0.1);
+  --font-size-x-small: 1.2rem;
+  --font-size-small: 1.4rem;
+  --font-size-normal: 1.6rem;
+  --font-size-medium: 2rem;
+  --font-size-large: 2.4rem;
+  --font-family: "Poppins", sans-serif;
+  --margin-small: 1rem;
+  --margin-medium: 1.5rem;
+  --gap-small: 1rem;
+  --gap-medium: 2.5rem;
+}
+
+.theme-light {
+  --light-color: #171721;
+  --dark-color: #fff;
+  --dark-color-lighter: #7e8299;
+  --body-background-color: #eef0f8;
+  --border-bottom-color: rgba(23, 23, 23, 0.05);
+  --transparent-button-color: var(--accent-color);
+}
+/* Base styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*Font size as a percentage helps when zooming in and out*/
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-normal);
+  color: var(--light-color);
+  line-height: 1.5;
+  background-color: var(--body-background-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+i {
+  font-size: var(--font-size-large);
+  line-height: 0;
+}
+/* Reusable classes */
+.container {
+  max-width: 134rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.place-items-center {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-grid {
+  display: grid;
+}
+/* Floating background image */
+.floating-bg-image {
+  background: rgb(235, 97, 35);
+  background: linear-gradient(
+    90deg,
+    rgba(235, 97, 35, 1) 11%,
+    rgba(182, 62, 8, 1) 75%
+  );
+  width: 100%;
+  height: 45rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Header */
+.header {
+  background-color: var(--dark-color);
+}
+
+.nav {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Nosifer", cursive;
+  font-weight: bold;
+  font-size: var(--font-size-small);
+}
+
+.logo span {
+  color: var(--main-color);
+}
+
+.align-right {
+  margin-left: auto;
+  background-color: var(--main-color);
+  border-radius: 0.4rem;
+}
+
+.icon-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.theme-dark-icon {
+  display: none;
+}
+
+.nav-mobile {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2.5rem;
+  transform: translateX(-105%);
+  z-index: 20;
+  transition: transform 0.5s;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+}
+
+.list-link {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: var(--font-size-small);
+  color: var(--dark-color-lighter);
+}
+
+.current {
+  color: var(--dark-color);
+}
+
+.menu-toggle-close {
+  background-color: var(--body-background-color);
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+}
+
+.dropdown-menu {
+  background-color: #fbceb1;
+  gap: 0;
+  margin-left: 1.5rem;
+  transform: translateY(-3px);
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.25s;
+}
+
+.dropdown > list-link i {
+  transition: transform 0.25s;
+}
+/* JavaScript styles */
+.nav-mobile.active {
+  transform: translateX(0);
+}
+
+.theme-light .theme-dark-icon {
+  display: block;
+}
+
+.theme-light .theme-light-icon {
+  display: none;
+}
+
+.dropdown.active > .list-link i {
+  transform: rotate(90deg);
+}
+
+.dropdown.active .dropdown-menu {
+  height: initial;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Welcome message */
+
+/* Management area */
+
+/* Footer */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3f4254;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2e303b;
+}
+/* Media queries */
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}

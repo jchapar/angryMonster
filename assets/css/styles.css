@@ -254,7 +254,7 @@ i {
 }
 
 .title {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-medium);
   margin-bottom: var(--margin-small);
 }
 
@@ -279,6 +279,11 @@ i {
   padding: 2.5rem;
 }
 
+.card-description {
+  font-size: var(--font-size-small);
+  margin-bottom: var(--margin-small);
+}
+
 .welcome-section .list-link {
   background: var(--main-color);
   color: var(--dark-color);
@@ -289,8 +294,65 @@ i {
 .welcome-section .list-link:hover {
   opacity: 0.8;
 }
-/* Management area */
+/* Quick Links Section */
+.quick-links-area {
+  padding-block: 2.5rem;
+}
 
+.quick-links-area-container,
+.card-group {
+  gap: var(--gap-medium);
+}
+
+.card-body-link {
+  font-size: var(--font-size-small);
+  background-color: var(--main-color);
+  margin-bottom: var(--margin-medium);
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small);
+}
+
+.card-group .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 17.5rem;
+  border-radius: 0.4rem;
+}
+
+.card-group .card::after {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  top: -2px;
+  right: -2px;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.border-orange::after {
+  background-image: linear-gradient(
+    235deg,
+    var(--main-color),
+    transparent,
+    var(--dark-color)
+  );
+}
+
+.card-group .card-description {
+  margin-bottom: var(--margin-medium);
+}
+
+.card-group .list-link {
+  background-color: var(--transparent-button-color);
+  color: var(--light-color);
+}
 /* Footer */
 
 /* Scrollbar */

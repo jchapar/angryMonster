@@ -9,6 +9,20 @@ menuToggleOpen.addEventListener("click", () =>
 menuToggleClose.addEventListener("click", () =>
   navMobileElement.classList.remove("active")
 );
+
 //Toggle theme
 
 //Show dropdown menu
+document.addEventListener("click", (e) => {
+  const dropdown1 = document.getElementById("dropdown-1");
+  const dropdown2 = document.getElementById("dropdown-2");
+
+  if (e.target.classList.contains("dropdown-btn-1")) {
+    dropdown1.classList.add("active");
+  } else if (e.target.classList.contains("dropdown-btn-2")) {
+    dropdown2.classList.add("active");
+  } else {
+    dropdown1.classList.remove("active");
+    dropdown2.classList.remove("active");
+  }
+});

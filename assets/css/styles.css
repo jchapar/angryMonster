@@ -182,9 +182,14 @@ i {
   right: 2.5rem;
 }
 
+.fa-angle-right {
+  margin-left: 1rem;
+}
+
 .dropdown-menu {
   background-color: #fbceb1;
   gap: 0;
+  border-radius: 0.4rem;
   margin-left: 1.5rem;
   transform: translateY(-3px);
   height: 0;
@@ -199,6 +204,10 @@ i {
 /* JavaScript styles */
 .nav-mobile.active {
   transform: translateX(0);
+}
+
+.dropdown.active .list-link:hover {
+  color: var(--dark-color);
 }
 
 .theme-light .theme-dark-icon {

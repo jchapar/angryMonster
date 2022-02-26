@@ -14,6 +14,7 @@
   --font-size-normal: 1.6rem;
   --font-size-medium: 2rem;
   --font-size-large: 2.4rem;
+  --font-size-x-large: 3rem;
   --font-family: "Poppins", sans-serif;
   --margin-small: 1rem;
   --margin-medium: 1.5rem;
@@ -229,8 +230,65 @@ i {
   pointer-events: auto;
 }
 
-/* Welcome message */
+/* Welcome Section */
+.welcome-section {
+  margin-top: var(--margin-medium);
+}
+.card {
+  background: var(--dark-color);
+  padding: 2.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(82, 63, 105, 0.05);
+}
 
+.card-header {
+  padding-block: 1rem;
+  margin-bottom: var(--margin-medium);
+  border-bottom: 1px solid var(--border-bottom-color);
+}
+
+.card-header small {
+  font-size: var(--font-size-x-small);
+  color: #7e8299;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: var(--font-size-large);
+  margin-bottom: var(--margin-small);
+}
+
+.title-main {
+  font-size: var(--font-size-x-large);
+}
+
+.title-secondary {
+  font-size: var(--font-size-medium);
+  color: #7e8299;
+}
+
+.company-name {
+  font-family: "Nosifer", cursive;
+}
+
+.company-name span {
+  color: var(--main-color);
+}
+
+.card-image img {
+  padding: 2.5rem;
+}
+
+.welcome-section .list-link {
+  background: var(--main-color);
+  color: var(--dark-color);
+  text-transform: uppercase;
+  transition: opacity 0.25s ease;
+}
+
+.welcome-section .list-link:hover {
+  opacity: 0.8;
+}
 /* Management area */
 
 /* Footer */

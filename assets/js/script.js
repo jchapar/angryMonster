@@ -22,7 +22,7 @@ if (currentTheme) {
 themeToggleBtn.addEventListener("click", () => {
   bodyElement.classList.toggle("theme-light");
 
-  if (bodyElement.classList.container("theme-light")) {
+  if (bodyElement.classList.contains("theme-light")) {
     localStorage.setItem("currentTheme", "themeActive");
   } else {
     localStorage.removeItem("currentTheme", "themeActive");

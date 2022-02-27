@@ -3,7 +3,8 @@
 /* Custom properties */
 :root {
   --light-color: #fff;
-  --dark-color: #171721;
+  /* --dark-color: #171721; */
+  --dark-color: #000000;
   --dark-color-lighter: #7e8299;
   --main-color: #eb6123;
   --body-background-color: #202028;
@@ -506,7 +507,7 @@ i {
   }
 
   .card-body-link:hover {
-    background-color: #1ba190;
+    background-color: #f19369;
   }
 
   .card-group {

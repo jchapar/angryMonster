@@ -51,6 +51,7 @@ body {
   color: var(--light-color);
   line-height: 1.5;
   background-color: var(--body-background-color);
+  overflow-x: hidden;
 }
 
 ul {
@@ -95,6 +96,41 @@ i {
 
 .d-grid {
   display: grid;
+}
+
+/* Loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(23, 23, 23, 1);
+  z-index: 999;
+  font-size: 3rem;
+  font-family: "Nosifer", cursive;
+  color: red;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.loader::after {
+  content: "\2026";
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px;
+  transition: opacity 0.25s ease;
+}
+
+@keyframes dots {
+  to {
+    width: 3.25rem;
+  }
 }
 /* Floating background image */
 .floating-bg-image {

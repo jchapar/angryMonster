@@ -1,3 +1,17 @@
+// Loader
+const loader = document.querySelector(".loader");
+function init() {
+  setTimeout(() => {
+    loader.style.opacity = 0;
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 4025);
+  }, 4000);
+}
+
+init();
+
 //Toggle mobile menu
 const menuToggleOpen = document.querySelector(".menu-toggle-open");
 const menuToggleClose = document.querySelector(".menu-toggle-close");

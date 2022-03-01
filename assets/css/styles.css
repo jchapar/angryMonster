@@ -225,7 +225,7 @@ i {
 }
 
 .dropdown-menu {
-  background-color: #fbceb1;
+  background-color: var(--main-color);
   gap: 0;
   border-radius: 0.4rem;
   margin-left: 1.5rem;
@@ -234,6 +234,10 @@ i {
   opacity: 0;
   pointer-events: none;
   transition: transform 0.25s;
+}
+
+.dropdown-menu .list-link {
+  color: #fff;
 }
 
 .dropdown > list-link i {
@@ -312,8 +316,13 @@ i {
   color: var(--main-color);
 }
 
+.card-image {
+  border-radius: 0.4rem;
+}
+
 .card-image img {
   padding: 2.5rem;
+  border-radius: 0.4rem;
 }
 
 .card-description {
@@ -389,6 +398,11 @@ i {
 .card-group .list-link {
   background-color: var(--transparent-button-color);
   color: var(--light-color);
+}
+
+/* Guest Section */
+.guest-section {
+  margin: 2rem 0;
 }
 /* Footer */
 .footer {
@@ -544,6 +558,10 @@ i {
 
   .card-body-link:hover {
     background-color: #f19369;
+  }
+
+  .guest-section .guest-section-area .card-group {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .card-group {

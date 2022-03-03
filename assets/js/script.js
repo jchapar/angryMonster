@@ -1,4 +1,4 @@
-// Loader
+// Loader ==============================================================
 const loader = document.querySelector(".loader");
 function init() {
   setTimeout(() => {
@@ -12,7 +12,7 @@ function init() {
 
 init();
 
-//Toggle mobile menu
+//Toggle mobile menu ==============================================================
 const menuToggleOpen = document.querySelector(".menu-toggle-open");
 const menuToggleClose = document.querySelector(".menu-toggle-close");
 const navMobileElement = document.querySelector(".nav-mobile");
@@ -24,7 +24,7 @@ menuToggleClose.addEventListener("click", () =>
   navMobileElement.classList.remove("active")
 );
 
-//Toggle theme
+//Toggle theme ==============================================================
 const bodyElement = document.body;
 const themeToggleBtn = document.querySelector(".theme-toggle-btn");
 const currentTheme = localStorage.getItem("currentTheme");
@@ -43,7 +43,7 @@ themeToggleBtn.addEventListener("click", () => {
   }
 });
 
-//Show dropdown menu
+//Show dropdown menu ==============================================================
 document.addEventListener("click", (e) => {
   const dropdown1 = document.getElementById("dropdown-1");
   const dropdown2 = document.getElementById("dropdown-2");
@@ -55,5 +55,17 @@ document.addEventListener("click", (e) => {
   } else {
     dropdown1.classList.remove("active");
     dropdown2.classList.remove("active");
+  }
+});
+
+//Header Effect ==============================================================
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", (e) => {
+  let scroll = this.scrollY;
+  if (scroll >= 150) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
   }
 });

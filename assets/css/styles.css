@@ -150,6 +150,17 @@ i {
 /* Header */
 .header {
   background-color: var(--dark-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  transition: all 0.25s ease;
+}
+
+.header.active {
+  height: 6.5rem;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .nav {
@@ -277,7 +288,7 @@ i {
 
 /* Welcome Section */
 .welcome-section {
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 .card {
   background: var(--dark-color);

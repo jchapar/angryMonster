@@ -17,6 +17,7 @@
   --font-size-large: 2.4rem;
   --font-size-x-large: 3rem;
   --font-family: "Poppins", sans-serif;
+  --main-font-famaily: "Nosifer", cursive;
   --margin-small: 1rem;
   --margin-medium: 1.5rem;
   --gap-small: 1rem;
@@ -98,6 +99,10 @@ i {
   display: grid;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* Loader */
 .loader {
   display: flex;
@@ -111,7 +116,7 @@ i {
   background: rgba(23, 23, 23, 1);
   z-index: 999;
   font-size: 3rem;
-  font-family: "Nosifer", cursive;
+  font-family: var(--main-font-famaily);
   color: red;
   opacity: 1;
   transition: opacity 1s ease;
@@ -135,11 +140,7 @@ i {
 /* Floating background image */
 .floating-bg-image {
   background: rgb(235, 97, 35);
-  background: linear-gradient(
-    90deg,
-    rgba(235, 97, 35, 1) 11%,
-    rgba(182, 62, 8, 1) 75%
-  );
+  background: linear-gradient(90deg, rgba(235, 97, 35, 1) 11%, rgba(182, 62, 8, 1) 75%);
   width: 100%;
   height: 45rem;
   position: absolute;
@@ -172,7 +173,7 @@ i {
 }
 
 .logo {
-  font-family: "Nosifer", cursive;
+  font-family: var(--main-font-famaily);
   font-weight: bold;
   font-size: var(--font-size-small);
 }
@@ -317,7 +318,7 @@ i {
 }
 
 .title span {
-  font-family: "Nosifer", "cursive";
+  font-family: var(--main-font-famaily);
 }
 
 .title-main {
@@ -330,7 +331,7 @@ i {
 }
 
 .company-name {
-  font-family: "Nosifer", cursive;
+  font-family: var(--main-font-famaily);
 }
 
 .company-name span {
@@ -349,6 +350,10 @@ i {
 .card-description {
   font-size: var(--font-size-small);
   margin-bottom: var(--margin-small);
+}
+
+.welcome-section {
+  margin-bottom: 2rem;
 }
 
 .welcome-section .list-link {
@@ -404,12 +409,7 @@ i {
 }
 
 .border-orange::after {
-  background-image: linear-gradient(
-    235deg,
-    var(--main-color),
-    transparent,
-    var(--dark-color)
-  );
+  background-image: linear-gradient(235deg, var(--main-color), transparent, var(--dark-color));
 }
 
 .card-group .card-description {
@@ -442,15 +442,85 @@ i {
 }
 
 /* Tickets Page */
+.price-group {
+  justify-content: center;
+  width: 100%;
+}
+.d-grid {
+  gap: 1rem;
+}
 .price-card {
-  border: red 1px solid;
   border-radius: 0.4rem;
+  width: 35rem;
+  background: #fff;
+  color: #000000;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  box-shadow: 1px 1px 4rem rgba(23, 23, 23, 0.2);
 }
+
+.price-card h2 {
+}
+
+.price-card small {
+  margin-bottom: 1rem;
+}
+
+.price-card h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.price-card h1 span {
+  position: absolute;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.price-card ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.price-card ul li {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.price-card ul li i {
+  margin-right: 1rem;
+}
+
+.price-card button {
+  background: var(--main-color);
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  width: 80%;
+  color: #fff;
+  transition: opacity 0.2s ease;
+  border-radius: 5rem;
+}
+
+.price-card button:hover {
+  opacity: 0.8;
+}
+
+.price-card.primary {
+  background: var(--main-color);
+  /* color: #fff; */
+}
+
+.price-card.primary button {
+  background: #fff;
+  color: #000000;
+}
+
 /* Footer */
 .footer {
   font-size: var(--font-size-small);

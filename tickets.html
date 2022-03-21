@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/9a3dbda65a.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/9a3dbda65a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="assets/js/script.js" defer></script>
     <title>Angry Monster | Tickets</title>
@@ -28,11 +25,7 @@
             </li>
             <!-- Dropdown Menu -->
             <li class="list-item dropdown" id="dropdown-1">
-              <button
-                class="list-link dropdown-btn dropdown-btn-1 place-items-center"
-              >
-                Arizona 2022 <i class="fa-solid fa-angle-right"></i>
-              </button>
+              <button class="list-link dropdown-btn dropdown-btn-1 place-items-center">Arizona 2022 <i class="fa-solid fa-angle-right"></i></button>
               <ul class="list dropdown-menu">
                 <li class="list-item">
                   <a href="#" class="list-link">Tickets</a>
@@ -56,11 +49,7 @@
             </li>
             <!-- Dropdown Menu -->
             <li class="list-item dropdown" id="dropdown-2">
-              <button
-                class="list-link dropdown-btn dropdown-btn-2 place-items-center"
-              >
-                Corolina 2022 <i class="fa-solid fa-angle-right"></i>
-              </button>
+              <button class="list-link dropdown-btn dropdown-btn-2 place-items-center">Corolina 2022 <i class="fa-solid fa-angle-right"></i></button>
               <ul class="list dropdown-menu">
                 <li class="list-item">
                   <a href="#" class="list-link">Tickets</a>
@@ -83,21 +72,13 @@
               </ul>
             </li>
           </ul>
-          <button
-            class="
-              icon-btn
-              menu-toggle-btn menu-toggle-close
-              place-items-center
-            "
-          >
+          <button class="icon-btn menu-toggle-btn menu-toggle-close place-items-center">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
 
         <div class="align-right">
-          <button
-            class="icon-btn menu-toggle-btn menu-toggle-open place-items-center"
-          >
+          <button class="icon-btn menu-toggle-btn menu-toggle-open place-items-center">
             <i class="fa-solid fa-bars"></i>
           </button>
           <button class="icon-btn theme-toggle-btn place-items-center">
@@ -112,55 +93,27 @@
     </header>
 
     <!-- Welcome Section -->
+    <!-- Welcome Section -->
     <section class="welcome-section">
       <div class="container">
         <div class="card">
           <header class="card-header">
-            <small>3 Days...</small>
-            <h2 class="title title-secondary">Filled with Spooky Fun!</h2>
+            <small>All of your favorites</small>
+            <h2 class="title title-secondary">All at one place!</h2>
           </header>
-          <div class="d-grid">
-            <div class="price-card">
-              <div class="price">
-                <h2>One Day</h2>
-                <span class="price">$29<small>99</small></span>
+          <div class="card-body d-grid">
+            <!-- <div class="card-image">
+              <img src="./assets/images/freddie.png" alt="Welcome Image" />
+            </div> -->
+            <div class="card-information text-center">
+              <h1 class="title title-main">
+                <span class="company-name"><span>Angry</span>Monster</span>
+              </h1>
+              <h2 class="title title-secondary">Next Event: July 8-10 | 2022</h2>
+              <div class="card-buttons">
+                <button onclick="location.href='guests.html'" class="list-link">Special Guests</button>
+                <button onclick="location.href='tickets.html'" class="list-link">Buy Tickets</button>
               </div>
-              <ul>
-                <li><i class="fa-solid fa-check"></i> Feature Number One</li>
-                <li><i class="fa-solid fa-check"></i> Feature Number Two</li>
-                <li><i class="fa-solid fa-xmark"></i> Feature Number Three</li>
-                <li><i class="fa-solid fa-xmark"></i> Feature Number Four</li>
-                <li><i class="fa-solid fa-xmark"></i> Feature Number Five</li>
-              </ul>
-              <button class="btn">Select</button>
-            </div>
-            <div class="price-card">
-              <div class="price">
-                <h2>Two Day</h2>
-                <span class="price">$39<small>99</small></span>
-              </div>
-              <ul>
-                <li><i class="fa-solid fa-check"></i> Feature Number One</li>
-                <li><i class="fa-solid fa-check"></i> Feature Number Two</li>
-                <li><i class="fa-solid fa-check"></i> Feature Number Three</li>
-                <li><i class="fa-solid fa-xmark"></i> Feature Number Four</li>
-                <li><i class="fa-solid fa-xmark"></i> Feature Number Five</li>
-              </ul>
-              <button class="btn">Select</button>
-            </div>
-            <div class="price-card">
-              <div class="price">
-                <h2>Three Day</h2>
-                <span class="price">$49<small>99</small></span>
-              </div>
-              <ul>
-                <li><i class="fa-solid fa-check"></i> Feature Number One</li>
-                <li><i class="fa-solid fa-check"></i> Feature Number Two</li>
-                <li><i class="fa-solid fa-check"></i> Feature Number Three</li>
-                <li><i class="fa-solid fa-check"></i> Feature Number Four</li>
-                <li><i class="fa-solid fa-check"></i> Feature Number Five</li>
-              </ul>
-              <button class="btn">Select</button>
             </div>
           </div>
         </div>
@@ -169,15 +122,55 @@
 
     <!-- Tickets Sections -->
     <section class="tickets-section">
-      <div class="tickets-section-area container"></div>
+      <div class="container ticket-section-area">
+        <div class="price-group d-grid">
+          <div class="price-card border-orange">
+            <h2>Single</h2>
+            <small>One Day Admission</small>
+            <h1>$29 <span>99</span></h1>
+            <ul>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-xmark"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-xmark"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-xmark"></i> Feature</li>
+            </ul>
+            <button class="price-btn">Select</button>
+          </div>
+          <div class="price-card border-orange primary">
+            <h2>Double</h2>
+            <small>Two Day Admission</small>
+            <h1>$49 <span>99</span></h1>
+            <ul>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-xmark"></i> Feature</li>
+            </ul>
+            <button class="price-btn">Select</button>
+          </div>
+          <div class="price-card border-orange">
+            <h2>Triple</h2>
+            <small>Three Day Admission</small>
+            <h1>$69 <span>99</span></h1>
+            <ul>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+              <li><i class="fa-solid fa-circle-check"></i> Feature</li>
+            </ul>
+            <button class="price-btn">Select</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container container">
-        <span class="copyright-information">
-          &copy; 2022 AngryMonster. All Rights Reserved
-        </span>
+        <span class="copyright-information"> &copy; 2022 AngryMonster. All Rights Reserved </span>
         <ul class="list">
           <li class="list-item">
             <a href="#">

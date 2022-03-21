@@ -442,16 +442,18 @@ i {
 }
 
 /* Tickets Page */
-.price-group {
-  justify-content: center;
-  width: 100%;
+.tickets-section {
+  margin-bottom: 2rem;
+  height: 100%;
 }
+
 .d-grid {
   gap: 1rem;
 }
 .price-card {
   border-radius: 0.4rem;
-  width: 35rem;
+  margin: 0 auto;
+  width: 30rem;
   background: #fff;
   color: #000000;
   padding: 2rem;
@@ -596,6 +598,14 @@ i {
 
   .copyright-information {
     order: 0;
+  }
+
+  /* Tickets */
+  .tickets-page .d-grid {
+    grid-template-columns: 1fr;
+  }
+  .price-group.d-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer .list {
